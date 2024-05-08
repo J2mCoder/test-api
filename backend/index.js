@@ -16,6 +16,10 @@ app.post('/api', (req, res) => {
 })
 
 app.options('*', cors(corsOptions))
+
+app.get('/', (req, res) => {
+    res.json({ "message": "Hello World" })
+})
 app.get('/api', (req, res) => {
     res.json({ "user": ["user1", "user2", "user3"] })
 })

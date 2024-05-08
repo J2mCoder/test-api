@@ -14,7 +14,7 @@ export default function App() {
     const username = data.get("username")
     const email = data.get("email")
 
-    fetch("http://127.0.0.1:5000/api", {
+    fetch("https://test-api-ek6p.onrender.com/api", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
